@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form in html</title>
+</head>
+<style>
+  form{
+    border:1px solid black;
+  }
+  input:not([type="radio"]),input:not([type="checkbox"]){
+    height:15px;
+  }
+  input[type="submit"]{
+    background-color:greenyellow;
+    border:none;
+    /* padding:8px 12px; */
+    /* padding:val1,val2=>top and bottom */
+    /* padding:val1 =>all side */
+    /* padding: val1 val2 val3 val4 =>top right bottom left */
+  }
+</style>
+<body>
+  <form method="post">
+    <!-- all element we need for form should be inside of form element -->
+  <h2>Registration form</h2>
+  <label for="name">Enter your name*:</label>
+  <input type="text" placeholder="enter your name" id="name"name="name" required>
+<br>
+<p>
+<small id="nameErr" ></small>
+</p>
+<label for="useremail">Enter your email:</label>
+<input type="email" placeholder="enter your email" id="useremail" name="mail">
+<br>
+<label for="userpassword">Enter your password:</label>
+<input type="password" placeholder="enter your password" id="userpassword" name="password">
+<br>
+<label for="gender">choose your gender:</label> <br>
+<input type="radio" name="male" value="f" id="male">male <br>
+
+<input type="radio" name="female" value="f" id="female">female <br>
+<input type="radio"name="other" value="o" id="other">other <br>
+<br>
+<input type="checkbox" name="terms"  id="'agree">I agree to terms and conditions.
+<br>
+<input type="checkbox" name="robot" id="verify">I am not a robot.
+<br>
+<input type="button" id="submitBtn" value="register">
+
+</form> 
+  <script src="d4 app.js"></script>
+</body>
+</html>

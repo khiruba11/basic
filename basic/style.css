@@ -1,0 +1,14 @@
+h1{
+    color:blue;
+    font-size:15px;
+
+
+}
+    #para1{
+        color:red;
+        font-size:23px;
+    }
+        .image{
+            /* rules for image */
+            height:500px;
+        }
